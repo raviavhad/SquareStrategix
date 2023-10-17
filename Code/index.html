@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="theme-color" content="linear-gradient(to bottom, #61daff, #656bff)">
+   <meta name="description" content="Square Hackathon">
+   <meta name="keywords" content="add to cart, add to cart javascript, localstorage add to cart, ecommerce shopping javascript, shooping cart demo">
+   <meta name="author" content="Rajamanickam">
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="img/vegacaf-modified.png">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+   <title>Square Strategix</title>
+</head>
+
+<body>
+   <main>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        
+         <a class="navbar-brand" href="#"><strong>Square Strategix</strong></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+               <input class="form-control mr-sm-2" type="search" id="search_field"  placeholder="Search Here!" aria-label="Search">
+            </form>
+            <button type="button" class="btn btn-success my-2 my-sm-0" data-toggle="modal"
+               data-target="#staticBackdrop">
+                <i class="fas fa-shopping-cart total-count"></i>
+            </button>
+           <a href="https://square.saurabhksinha90.repl.co/admin">Admin Dashboard</a>
+         </div>
+      </nav>
+     
+      <section>
+         <div class="featured-area pt-100 pb-70">
+            <div class="container">
+               <div class="tab featured-tab-area">
+                  <div class="row justify-content-center">
+
+                     <div class="col-lg-4 col-md-8">
+                        <ul class="tabs active">
+                           <li class="">
+                              <a href="#">
+                                 All
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href="#">
+                                 Coffee
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href="#">
+                                 Cake
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href="#">
+                                 Sandwiches
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="tab_content current active pt-45">
+                     
+                     <div class="tabs_item current">
+                        <div class="row justify-content-center">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/espresso_caffe_latte.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Caffè Latte</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 2.95 </h4>
+                                       <span>(4.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Caffè_Latte" data-price="2.95" class="default-btn border-radius-5"> Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Pumpkin-Spice-Loaf-Cake.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Pumpkin Spice Loaf Cake </a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 10.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Pumpkin_Spice_Loaf_Cake" data-price="10.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Cream-Cheese-Bagel.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Cream Cheese Bagel	</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 1.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Cream_Cheese_Bagel" data-price="1.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Cold_Brew_Latte.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Cold Brew Latte</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 10.95 </h4>
+                                       <span>(4.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Cold_Brew_Latte" data-price="10.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Carrot-Cake.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Carrot Cake</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 3.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Carrot_Cake" data-price="3.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Butter-Laugenbrezel.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Pretzel with butter </a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 3.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Pretzel_with_butter" data-price="3.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Cappuccino.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Cappuccino</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 4.95 </h4>
+                                       <span>(4.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Cappuccino" data-price="4.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/New-York-Cheesecake.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">New York Cheesecake</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 26.95 </h4>
+                                       <span>(4.0)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="New_York_Cheesecake" data-price="26.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Vegetarian-Chicken-Cesar.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Veg Caesar Baguette</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 5.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Google" data-price="5.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Iced_Americano.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Iced Caffè Americano</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 3.95 </h4>
+                                       <span>(3.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Iced_Caffè_Americano" data-price="3.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Raspberry-Cheesecake.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Raspberry Cheesecake</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 9.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Raspberry_Cheesecake" data-price="9.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Vegan-Chick'n-Vegetable-Focaccia.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Veg Filet Stripes</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 6.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Veg Filet Stripes" data-price="6.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tabs_item">
+                        <div class="row justify-content-center">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/espresso_caffe_latte.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Caffè Latte</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 2.95 </h4>
+                                       <span>(4.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Caffè_Latte" data-price="2.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Cold_Brew_Latte.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Cold Brew Latte</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 10.95 </h4>
+                                       <span>(4.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Cold_Brew_Latte" data-price="10.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Cappuccino.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Cappuccino</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 4.95 </h4>
+                                       <span>(4.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Cuban" data-price="4.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Iced_Americano.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Iced Caffè Americano</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 3.95 </h4>
+                                       <span>(3.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Iced_Caffè_Americano" data-price="3.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tabs_item">
+                        <div class="row justify-content-center">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Pumpkin-Spice-Loaf-Cake.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Pumpkin Spice Loaf Cake </a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 10.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Pumpkin_Spice_Loaf_Cake" data-price="10.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Carrot-Cake.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Carrot Cake</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 3.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Carrot_Cake" data-price="3.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/New-York-Cheesecake.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">New York Cheesecake</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 26.95 </h4>
+                                       <span>(4.0)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="New_York_Cheesecake" data-price="26.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Raspberry-Cheesecake.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Raspberry Cheesecake</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 9.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Raspberry_Cheesecake" data-price="9.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tabs_item">
+                        <div class="row justify-content-center">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Cream-Cheese-Bagel.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Cream Cheese Bagel	</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 1.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Cream_Cheese_Bagel" data-price="1.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Butter-Laugenbrezel.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Pretzel with butter </a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 3.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Pretzel_with_butter" data-price="3.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Vegetarian-Chicken-Cesar.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Veg Caesar Baguette</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 5.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Veg_Caesar_Baguette" data-price="5.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="img/Vegan-Chick'n-Vegetable-Focaccia.jpeg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Veg Filet Stripes</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 6.95 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Veg_Filet_Stripes" data-price="6.95" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <p id="not_found"></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <table class="show-cart table">
+        
+                  </table>
+                  <div class="grand-total">Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://square.saurabhksinha90.repl.co/a">Checkout
+                  </a>
+                  
+                  				
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-danger clear-all">Clear All</button> 
+                </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="script.js"></script>
+
+
+</body>
+
+</html>
